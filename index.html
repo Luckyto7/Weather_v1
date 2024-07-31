@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Погода </h1>
+      <input type="text" id="cityInput" placeholder="Enter city">
+      <button id="searchButton">Поиск</button>
+    </header>
+    <div class="weather-info" id="weatherInfo">
+      <h2 id="cityName">Город</h2>
+      <p id="description">Description</p>
+      <p id="temperature">0°C</p>
+      <div class="weather-icon" id="weatherIcon">
+       
+      </div>
+    </div>
+    <div class="forecast">
+      <div class="forecast-day" id="forecastDay1">
+        <p>Завтра</p>
+        <div class="forecast-icon" id="forecastIcon1"></div>
+        <p id="forecastTemp1">0°C</p>
+      </div>
+      <div class="forecast-day" id="forecastDay2">
+        <p>Послезавтра </p>
+        <div class="forecast-icon" id="forecastIcon2"></div>
+        <p id="forecastTemp2">0°C</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

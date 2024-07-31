@@ -1,0 +1,110 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-image 0.5s ease-in-out;
+  }
+  
+  body.sunny {
+    background-image: url('sunny.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  body.cloudy {
+    background-image: url('cloudy.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  body.rainy {
+    background-image: url('rainy.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  body.snowy {
+    background-image: url('snowy.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  header {
+    margin-bottom: 20px;
+  }
+  
+  #cityInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 24px);
+  }
+  
+  #searchButton {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8f9091;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .weather-info {
+    margin-top: 20px;
+  }
+  
+  #cityName {
+    margin: 0;
+  }
+  
+  #description, #temperature {
+    margin: 5px 0;
+  }
+  
+  .weather-icon {
+    margin-top: 20px;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  .weather-icon img {
+    width: 100px;
+    animation: pulse 1s infinite;
+  }
+  
+  .forecast {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .forecast-day {
+    text-align: center;
+  }
+  
+  .forecast-icon img {
+    width: 50px;
+  }
+  
+  
